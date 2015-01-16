@@ -50,7 +50,7 @@ public class InfoBackUpActivity extends Activity {
 	private final int UPLOAD_PARA = 10; // 向uploadOption传送信息的requestCode
 	private final int INFODISPLAY_PARA = 11;
 	public final static String SOCKET_IP = "202.38.95.146";//the IP address in USTC NIC blade Server.
-	public final static int SOCKET_PORT = 1500;
+	public final static int SOCKET_PORT = 1500;// socket listening
 	Button uploadOptionButton; // 上传选项按钮
 	Button getInfoButton; // 获取自己统计信息按钮
 	Button manualUploadButton; // 手动上传按钮
