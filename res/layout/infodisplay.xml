@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#555555"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通话记录" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="16.14"
+        android:orientation="vertical" >
+
+        <ExpandableListView
+            android:id="@+id/expandableListView_callLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        </ExpandableListView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="短信记录" />
+
+    <ExpandableListView
+        android:id="@+id/expandableListView_smsLog"
+        android:layout_width="match_parent"
+        android:layout_height="136dp" >
+
+    </ExpandableListView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="流量信息" />
+
+    <ListView
+        android:id="@+id/listView_traLog"
+        android:layout_width="match_parent"
+        android:layout_height="168dp" >
+
+    </ListView>
+
+</LinearLayout>

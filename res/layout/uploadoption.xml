@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.19"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:editable="false"
+            android:text="上传时间" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_AutoUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/isAutoUploadCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_PickTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自动上传"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/textView_UploadCyc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传周期：6小时0分钟" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="上传项目" />
+
+        <CheckBox
+            android:id="@+id/isUploadCallLogCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="通话记录" />
+
+        <CheckBox
+            android:id="@+id/isUploadSMSLogCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="短信记录" />
+
+        <CheckBox
+            android:id="@+id/isUploadNetworkTrafficStatsLocCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="数据流量和位置" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="扩展功能" />
+
+        <CheckBox
+            android:id="@+id/isUploadAPPLogCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="应用程序信息" />
+
+        <CheckBox
+            android:id="@+id/isUploadPhoneContactsCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="通讯录" android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
